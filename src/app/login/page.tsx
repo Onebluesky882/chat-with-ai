@@ -1,6 +1,7 @@
 import AuthForm from "@/components/AuthForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
 const LoginPage = () => {
   return (
@@ -13,6 +14,12 @@ const LoginPage = () => {
         </CardHeader>
         <AuthForm />
       </Card>
+      <p>
+        I don't have account yet?{" "}
+        <span>
+          <Link href={"/signup"}>signup</Link>
+        </span>
+      </p>
     </div>
   );
 };
